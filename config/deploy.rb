@@ -25,17 +25,17 @@ namespace :vlad do
     # end
 
   remote_task :restart_nginx do 
-    notice "---start restart nginx---"
+    notice "---restart nginx---"
     run "sudo /etc/init.d/nginx restart"
   end
 
   remote_task :restart_mongrel_cluster do 
-    notice "---start restart_fcgi---"
-    run "sudo /etc/lighttpd/dispatch.sh restart"
+    notice "---restart_mongrel_cluster---"
+    run "sudo /etc/init.d/mongrel_ctl restart"
   end  
 
   remote_task :refresh_crontab do
-    notice "---start resresh crontab---"
+    notice "---resresh crontab---"
     # run "crontab #{deploy_to}/config/schedule.sh"
   end
 end
