@@ -1,0 +1,30 @@
+<% @title = "S3-桶 #{@bucket.name}" %>
+
+
+<div id="objects">
+
+	<div class="yui-ge rounded toolbar">
+		<div class="yui-u first">
+			<b><%= @bucket.name + "    " %></b><%= link_to "上传文件",'#add_objects', :class => "rounded {transparent} button", :rel => "facebox" %>
+		</div>
+		<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+	</div>
+
+	<div id="add_objects" style="display:none">
+			<% form_tag create_bucket_path do %>
+			名称: <input name="bucket_name" type="text"/>
+			<input type="submit" value="创建桶"/>
+			<% end %>
+	</div>
+
+	<ul id="objects_list" class="rounded">
+		<% @objects.each do |o| %>
+		<li class="rounded">
+		<b><%= o.key %></b>
+		<%= link_to "下载",o.url, :class => "rounded {transparent} button small tool" %>
+		</li>
+		<% end %>
+	</ul>
+
+</div>
+

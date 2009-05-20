@@ -57,6 +57,8 @@ ActionController::Routing::Routes.draw do |map|
   map.with_options(:controller => 'aws/buckets') do |accounts|
     accounts.create_bucket   "/aws/buckets/create",   :action => 'create'
     accounts.delete_bucket   "/aws/buckets/:id/delete",   :action => 'delete'
+    accounts.objects_bucket   "/aws/buckets/:id/objects",   :action => 'objects'
+    accounts.object_bucket   "/aws/buckets/:id/objects/:obj_id",   :action => 'download'
   end
   
   

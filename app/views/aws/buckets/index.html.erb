@@ -22,7 +22,7 @@
 	<ul id="buckets_list" class="rounded">
 		<% @buckets.each do |bucket| %>
 		<li class="rounded">
-		<b> <%= link_to bucket.name, "/bucket/#{bucket}/keys" %></b>  <small>(创建时间:<%= bucket.creation_date %>)</small>
+		<b> <%= link_to bucket.name, objects_bucket_path(bucket.name) %></b>  <small>(创建时间:<%= bucket.creation_date %>)</small>
 		<%= link_to "删除",delete_bucket_path(bucket.name), :class => "rounded {transparent} button small tool", :onclick => "return confirm('警告!!!    如果桶里面有文件,所有文件将会被一起删除,确认?')" %>
 		</li>
 		<% end %>

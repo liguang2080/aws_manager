@@ -1,396 +1,83 @@
  html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}select,input,button,textarea,button{font:99% arial,helvetica,clean,sans-serif;}table{font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%;}body{text-align:center;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.25em;}#doc2{width:73.076em;*width:71.25em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.05em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main,.yui-g .yui-u .yui-g{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.30769em;*width:12.00em;}.yui-t1 #yui-main .yui-b{margin-left:13.30769em;*margin-left:13.05em;}.yui-t2 .yui-b{float:left;width:13.8461em;*width:13.50em;}.yui-t2 #yui-main .yui-b{margin-left:14.8461em;*margin-left:14.55em;}.yui-t3 .yui-b{float:left;width:23.0769em;*width:22.50em;}.yui-t3 #yui-main .yui-b{margin-left:24.0769em;*margin-left:23.62em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.50em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.55em;}.yui-t5 .yui-b{float:right;width:18.4615em;*width:18.00em;}.yui-t5 #yui-main .yui-b{margin-right:19.4615em;*margin-right:19.125em;}.yui-t6 .yui-b{float:right;width:23.0769em;*width:22.50em;}.yui-t6 #yui-main .yui-b{margin-right:24.0769em;*margin-right:23.62em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;}.yui-g div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first,.yui-g .yui-gc div.first,.yui-g .yui-ge div.first,.yui-gc div.first div.first{float:left;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{width:32%;margin-left:1.99%;}.yui-gb .yui-u{*margin-left:1.9%;*width:31.9%;}.yui-gc div.first,.yui-gd .yui-u{width:66%;}.yui-gd div.first{width:32%;}.yui-ge div.first,.yui-gf .yui-u{width:74.2%;}.yui-ge .yui-u,.yui-gf div.first{width:24%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:49%;*width:48.1%;*margin-left:0;}.yui-g .yui-g .yui-u{width:48.1%;}.yui-g .yui-gb div.first,.yui-gb .yui-gb div.first{*margin-right:0;*width:32%;_width:31.7%;}.yui-g .yui-gc div.first,.yui-gd .yui-g{width:66%;}.yui-gb .yui-g div.first{*margin-right:4%;_margin-right:1.3%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{*margin-left:1.8%;_margin-left:4%;}.yui-g .yui-gb .yui-u{_margin-left:1.0%;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-g .yui-gc .yui-u,.yui-gb .yui-gc .yui-u{width:32%;_float:right;margin-right:0;_margin-left:0;}.yui-gb .yui-gc div.first{width:66%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{*width:48.1%;*margin-left:0;}.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-g{width:24%;}.yui-gf .yui-g{width:74.2%;}.yui-gb .yui-ge div.yui-u,.yui-gb .yui-gf div.yui-u{float:right;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf div.first{float:left;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}.yui-ge div.first .yui-gd .yui-u{width:65%;}.yui-ge div.first .yui-gd div.first{width:32%;}#hd:after,#bd:after,#ft:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#hd,#bd,#ft,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}
- *{ margin: 0; padding: 0}
-h1{ font-size: 15px; padding: 0; margin: 0; margin-bottom:5px}
-a{ padding: 1px; text-decoration: none; color: #0033cc}
-a:hover{ background-color:#0033cc; color: #ffffff; padding: 1px }
-img{ border: 0 none}
-td{ padding: 2px 4px}
-table{ width: 100%}
-ul{ list-style: none}
-div.clear{ clear: both}
- form label{ float: left; width: 100px; display: block}
-form p{ margin-bottom: 5px}
-.small_form{ width: 790px; float: left; border: 1px solid #464646; padding: 10px; background: #FAFDFE}
-.texile_hint{ width: 400px; float: right; background: #464646; height: 297px; color: #fff; padding: 10px}
-.texile_hint ul{ margin: 10px 0 0 20px; font-size: 13px; font-weight: normal}
- a.gray{ color:#666666 !important}
- .lefcol{ float: left; width: 700px}
- .col{ background:#fff url(/images/bg/right-bg.gif) repeat-y scroll right center; padding:0pt 8px 0pt 0pt; position:relative; border: 1px solid #eee; border-right: none}
-.pageheader{ background: #EDF3FE ; padding:5px 10px}
-.innercol{ background: #fff; padding: 10px; padding-top: 5px}
-.pagefooter{ padding: 10px; background: #FDFFFD; border-top: 1px solid #eee; padding-top: 25px}
-.small_left_col{ width: 400px; float: left}
-.small_right_col{ width: 470px; float: right}
-.dialog{ margin: 0 auto; padding: 20px; background: #FFedd3 ; border-top: 5px solid #ff9900}
- .clearAfter:after {clear:both; content:"."; display:block; height:0pt; visibility:hidden}
-.clearAfter {}
-* html .clearAfter {height:1%}
-.clearAfter {display:block}
- body {background-color: #f6f6f6; font-size: 13px; color: #333}
-body, td, th {font-family:verdana,arial,sans-serif; font-size-adjust:none; font-stretch:normal; font-style:normal; font-variant:normal; font-weight:normal; line-height:1.5em}
- #wrap{ width: 950px; margin: 0pt auto; background-color: #fff; border-left:4px solid #f1f1f1; border-right: 4px solid #f1f1f1; position: relative}
- #header{ background:#003366 url(/images/logo.gif) no-repeat 50px center; color: #fff}
-.headertext{ float: left; margin: 2px 5px}
- #footer{ background: #003366; color: #fff; padding: 10px; text-align: center}
-#footer a{ color: #fff}
-#footer a:hover {background-color:#1D64AD; color:#fff }
-#footer ul{ width: 300px; margin: 0 auto}
-#footer ul li{ float: left; width: 100px}
- #welcome{ float: right; margin: 10px 10px 0px 0}
-#welcome li{ float: left; margin-right: 5px}
-#welcome li a{ color: #fff}
-#welcome li a:hover {background-color:#1D64AD}
- #nav{ float: right; clear: right; list-style: none}
-#nav li{ float: left; background: #1B61DE; margin-right: 2px}
-#nav li a{ list-style: none; display: block; padding: 3px 8px; font-size: 12px; background-color:#1A4F85; border-color:#003366 rgb(0, 51, 102) rgb(26, 79, 133); border-style:solid; border-width:1px; color:#FFFFFF}
-#nav li a:hover {background-color:#1D64AD}
-#newses_body #news a,#realtime_body #realtime a,#myfunds_body #myfund a,#index_body #homepage a,#netvalues_body #netvalues a,#forums_body #forums a,#friends_body #myfriends a,#messages_body #mymessages a, #books_body #books a{ color: #009900; font-weight: bolder; background-color: #fff; border-bottom: 1px solid #fff}
-#newses_body #news a:hover,#realtime_body #realtime a:hover,#myfunds_body #myfund a:hover,#index_body #homepage a:hover,#netvalues_body #netvalues a:hover,#forums_body #forums a:hover,#friends_body #myfriends a:hover,#messages_body #mymessages a:hover,#books_body #books a:hover{ background-color: #fff}
- p.notice,p.notice_error{ background: #F4F8FE; border:4px solid #CCDFFA; padding: 10px; text-align: center; margin: 5px auto; margin-bottom: 10px; width: 500px; color: #003366}
-p.notice_error{ color: #ff0000}
-p.error{ background: #FFFBFB; border:4px solid #F00000; color: #9D1E1E; font-weight: bold}
- #content{ padding: 20px; padding-top: 10px }
-.login{ width: 300px}
- .forums{ border: 2px solid #FFDEAD}
-.forums td{ border-bottom: 1px solid #DCE6F1; border-left: 1px solid #DCE6F1}
-.forums .c1{ border-bottom: 1px solid #DCE6F1; border-left: 1px solid #DCE6F1}
-.la{ font-size: 14px; background: #FFF9D7 ; padding: 2px 3px; font-weight: bold; color: #003366; border-bottom: 2px solid #FFDEAD}
-.c1{ padding: 15px; border-bottom: 1px solid #DCE6F1}
-.forums .c1{ border-left: none}
-.c2{ padding: 5px 10px; background: #FAFCFE; border-bottom: 1px solid #DCE6F1; border-left: 1px solid #DCE6F1}
-td.c3{ padding: 0px; border-left: none}
-.title{ font-size: 15px; color: #5A771D; padding: 2px; font-weight: bold}
-.lp{ border-bottom:1px solid #DCE6F1; padding: 5px 10px}
-.lp span{ display: block; margin-bottom: 5px}
-.asmall{ color: Gray; font-size: 12px}
-.desc{ color: #003366}
-.utility{ float: right; background: #3386DD; border: 3px solid #0054A4; padding: 1px 5px; color: #fff !important}
-a.utility:hover{ padding: 1px 5px}
-.utility a{ color: #fff}
-.pages{ border: 1px solid #D7E3FD; padding: 3px; float: right; clear: right;  background: #F9FBFE; color: #FF8C00}
-.pages a{ padding: 2px 4px; border: 1px solid #fff}
-.pages a:hover{ padding: 2px 4px; background: #CEDDF9; border: 1px solid #88ADF0}
-.inv{ background:#FAFCFE;}
-.pagefooter .pages{ float: right}
-.sticky-title{ color: #D57500; font-size: 15px; font-weight: bold}
-.welcome_notice{ margin-left: 20px; font-size: 12px; background-color: #fff; padding: 5px 10px; color: #4D6619; border: 1px solid #9BBDF9}
- fieldset{ margin: 5px; border: 1px solid #9ACD32; padding: 10px}
-fieldset.myfunds{ margin-bottom: 20px}
-fieldset p{ margin: 5px 0}
-fieldset legend{ background: #DEFFAE; border: 1px solid #9ACD32; padding: 2px 5px}
-label.standard_label{ margin: 5px 0; float: none}
- .stats{ padding: 10px; background: #FFEDCA; color: #445A17}
-#users_list{ padding: 5px; background: #fff; border: 1px solid #FFCD6F}
- .logo_hint{ text-align: center; width: 500px; margin: 0px auto}
-.logo_hint li{ float: left; margin-right: 20px; width: 100px}
-.logo_hint li img{ width: 30px; height: 30px; padding: 5px}
-.logo_hint li span{ display: block; font-size: 12px; color: #003366}
- .crumbs{ padding: 2px; background: #fff; border: 1px solid #7DC0FF; width: 250px}
-.edit_link{ font-size: 12px}
-#topic-title{ padding: 2px 3px; font-size: 14px}
- #monitor_checkbox{ float: left}
-#monitor_label{ float: right; display: inline}
- #activity{ position: absolute; top: 126px; left: 0px; background: #f00; color: #fff; padding: 5px 10px; font-weight: bold; z-index: 1000}
- a.post_top{ width: 100%; background: #f6ffee; display: block; height: 1px}
-table.posts{ margin: 5px 0}
-tr.post td.author{ border: 1px solid #D0E0F9; border-right: 2px dotted #E5F0FF; width: 20%; padding:10px 15px; background: #F3F6FF; vertical-align: top}
-tr.post td.body{ border: 1px solid #D0E0F9; border-left: none; background: #FCFEFF; padding-left: 15px; line-height: 150%}
-tr.post td.body p{ margin: 5px 0}
-span.posts{ display: block; clear: both}
-img.photo{ margin: 5px 0; float: left; margin-right: 8px}
-.reply_button{ float: right; background: #F6FAFF; border: 1px solid #C8E0FF; padding: 5px}
-a.reply_button:hover{ padding: 5px}
-.floor{ text-align: right; padding-right: 10px; color: #191970}
-.body_html{ line-height: 30px;  width: 680px; overflow: auto}
- .editbox{ background: #F7F9FC; padding: 20px; border: 1px solid #B0C4DE; margin-bottom: 5px}
- .flat{ padding: 15px; list-style: square; padding-left:25px}
- .h3_title{ background: #EEEEEE; padding: 5px; margin-bottom: 10px}
-#change_pass{ clear: both}
-img.user_picture{ width: 60px; height: 60px; border: 1px solid #D9E3F0; padding: 2px; background: #fff; float: left; margin: 5px 5px 5px 0}
-.admin{ padding: 20px; border: 1px solid #7EA729; margin: 20px}
- #friends{ }
-#friends li{ margin-bottom: 5px; padding-left: 20px; background: #fff; padding: 5px; float: left; margin-right: 22px}
-#friends li.inactive{ background: #f7f7f7}
-#friends li a{ margin-right: 20px; display: block; width: 70px; padding: 1px; padding-left: 10px; font-size: 12px}
-#friends li.inactive a{ color: #333}
-#friends li.inactive a:hover{ color: #fff}
-#friends li.active{ background: #FFF7CA}
- .message{ margin-top: 5px}
-.message span{ padding: 5px; background:#F6FAFF none repeat scroll 0%; border: 1px solid #9BBDF9}
- .add_friends_link{ margin: 5px; padding: 5px; background:#F6FAFF none repeat scroll 0%; border: 1px solid #9BBDF9}
-#new_friend{ padding: 15px}
-#new_friend p{ margin: 5px 0}
- .how_to{ background: #FFF097; padding: 10px;; width: 170px; float: right; font-size: 12px; line-height: 2em; text-indent: 10px; color: #333}
-.how_to h1{ background: #FFF6C1; padding: 2px 5px; font-size: 14px}
-span.strong{ color: #003366; font-weight: bold;  border-bottom: 1px dotted #333}
- .dashboard{ border-top: 5px solid #FF0099; background: #FFE5F5 ; padding: 10px 6px; padding-bottom: 2px; width: 180px; float: right; font-size: 12px; line-height: 2em; text-indent: 10px; color:#333}
-.dashboard h1{ background: #FFF0F9; padding: 2px 0; font-size: 13px}
-.dashboard div{ padding: 10px 4px}
-span.strong{ color: #003366; font-weight: bold; border-bottom: 1px dotted #333}
- .railway{ border-top: 5px solid #0099FF; background: #E9F7FE ; padding: 10px 6px; width: 180px; float: right; clear: right; font-size: 12px; line-height: 2em; text-indent: 10px; color:#333; margin-top: 20px}
-.railway h1{ background: #F1FAFE; padding: 2px 0; font-size: 13px}
-.railway a:hover{ background: #fff}
-.railway ul{ padding: 4px; background: #fff}
-.railway ul li{ color: #32CD32; font-weight: bold}
-.railway ul li a{ color: #223753}
-.railway ul li a:hover{ color: #fff; background: #223753}
-.railway ul li.gotop{ color: #ff0000; font-weight: bold}
-span.strong{ color: #003366; font-weight: bold; border-bottom: 1px dotted #333}
- .table{ background: #fefefe; border: 1px solid #ccc; padding: 5px}
-.th{ background: #eee}
-.th th{ padding: 5px}
-.table td{ border-bottom: 1px dotted #aaa}
-.db{ padding: 5px; border-left: 1px dotted #ccc; border-right: 1px dotted #ccc}
-.active_da{ background: #FFF0F9}
-.help{ color: #D20000}
-.current_ac{ padding: 5px; margin: 0px; text-align: center}
- .mail_nav{ float: right; width: 150px; padding: 30px 10px; background: #F2F8FF}
-.mail_nav li{ padding: 0; margin-bottom:10px}
-.mail_nav li a{ padding: 5px; padding-left: 25px; display: block; width: 120px; background: #EDF3FE}
-.mail_nav li a:hover{ padding: 5px; padding-left: 25px; display: block; width: 120px; color: #6F6F6F}
-#inbox_link{ background:#EDF3FE url(/images/inbox.gif) no-repeat 4% 50%;}
-#outbox_link{ background:#EDF3FE url(/images/outbox.gif) no-repeat 4% 50%;}
-#trash_link{ background:#EDF3FE url(/images/trashbox.gif) no-repeat 4% 50%;}
-#new_link{ background:#EDF3FE url(/images/new_link.gif) no-repeat 4% 50%;}
-#friends_link{ background:#EDF3FE url(/images/my_friends.gif) no-repeat 4% 50%;}
-.errorExplanation{ padding: 10px; background: #f00; color: #fff; font-weight: bold; font-size: 12px}
-.message_body{ border: 1px solid #eee; padding:10px; background: #EDF3FE}
-.mail_show{ padding: 10px; background: #f4f4f4; margin-bottom: 15px}
-.reply_mail{ border: 1px solid #EDF3FE; margin-top: 10px; padding: 5px}
-.unread{ background: #FFE2BF}
- table.sort-table{ color: #333}
-table.sort-table thead{ background: #FFF9D7}
-table.sort-table thead th{ padding: 5px 0px; padding-right: 12px}
-table.sort-table td{ border-bottom: 1px solid #EDF3FE}
-table.sort-table th.upSort {background:#FFF19F url(/images/arrow-up.gif) no-repeat scroll right center}
-table.sort-table th.downSort {background:#FFF19F url(/images/arrow-down.gif) no-repeat scroll right center}
-.netvalue_hint{ padding: 5px; margin-bottom: 5px; border: 1px solid #D9E6FD; background: #EDF3FE; color: #003366; height: 1%; text-align: right}
-.netvalue_hint span{ color: #03c}
-.odd{ background: #F9FBFD}
- .auto_complete {cursor:pointer}
-.auto_complete ul li{ width: 90%}
-.auto-funds{ font-size: 12px}
- table.fund_info{ background: #FFFEF6; border: 1px solid #FFE966; border-bottom: none; margin-bottom: 10px}
-.fund_info td{ border-bottom: 1px solid #FFF1A1; padding: 5px }
-.fund_info td.highlight{ background: #FFF8CE; padding-left:10px}
-ul.chart_type li{ float: left; margin: 5px; margin-right: 10px; font-size: 12px}
-ul.chart_type li.active a{ display: block; padding: 0 2px; background: #F9FBFD; border: 1px solid #D3E0ED}
- .required{ color: #f00}
- .subtitle{ float: left; clear: left}
-.wide td{ border-bottom: 1px solid #EAF0F6}
- .date_picker { display: none;   background-color:white; padding: 3px; border: 1px solid silver}
-.date_picker table {border: 1px solid silver; border-top: 2px solid silver; border-bottom: 3px solid silver; font-family: verdana, sans-serif; width: 200px; font-size: 12px}
-.date_picker th {font-size: 10px; color: #333; text-align: center}
-.date_picker .day_labels th {color: darkgreen; font-size: 9px; font-weight: normal}
-.date_picker td {width: 18px; background-color: #ddd; font-size: 9px; text-align: right; padding: 0}
-.date_picker a {text-decoration: none; border-bottom: 1px dotted silver; color: #333}
-.date_picker a:hover {color:white ; background-color: black}
-.date_picker .cancel_butt {text-align: right; padding-right: 5px }
-.date_picker .cancel_butt a {font-size: 12px; color: gray; font-family: verdana, sans-serif; text-decoration: none}
-.date_picker .cancel_butt a:hover {background-color: gray; color: white}
- .myfund_name{ font-size: 14px; font-weight: bold ; color: #21262C}
-ul.myfund_menu{ float: right; font-size: 12px}
-ul.myfund_menu li{ float: left; padding-left: 15px}
-ul.myfund_menu li.left_border{ margin-left: 10px; border-left:1px solid #1144CC}
-.default_notice{ padding: 5px; width: 500px; margin: 0 auto; text-align: center; background: #FFFFDB; border:1px solid #FF991C; margin-bottom: 10px; font-size: 12px}
-.hold_info,.basic_info,.total_info{ float: left; margin-left: 38px; padding: 10px; border-top: 5px solid #FF0099; background: #FFE5F5 ; margin-bottom: 15px; display: inline; font-size: 12px}
-.hold_info h1{ color: #A60064}
-.basic_info{ border-top: 5px solid #0099FF; background: #E9F7FE }
-.basic_info h1{ color: #00578E}
-.total_info{ border-top: 5px solid #AED75B; background: #E9F4D3; clear: right}
-.total_info h1{ color: #55711B}
-.hold_info table,.basic_info table,.total_info table{ width: 175px}
-.basic_info,.total_info{ margin-left: 10px}
-.myfund_chart{ width: 600px; margin: 0 auto; background:#F9FBFD; border: 1px solid #eee; margin-bottom:10px}
-table.myfund_chart td{ border-bottom: none; padding: 0px}
-#fund_chart{ width: 500px; height: 300px; margin: 0 auto}
- .neg{ color: #008000}
-.opp{ color: #ff0000}
- .myfund_setting{ width: 500px; margin: 10px auto}
-.myfund_setting input{ width: 50px}
- div.myfundlogs{ width: 600px; margin: 0 auto; font-size: 12px}
-div.myfundlogs table{ width: 600px; margin: 0 auto; border-bottom: 1px solid #CAD2D9; border-top: 1px solid #CAD2D9}
-div.myfundlogs table th{ border-bottom: 1px solid #CAD2D9; text-align: right; padding: 6px 10px; background: #F8F9F9; font-size: 12px}
-div.myfundlogs table td{ padding: 4px 10px; text-align: right}
-div.myfundlogs h1{ color: #45525C}
- .fieldWithErrors{ background: #f00; padding: 5px; color: #fff}
- a.image_link{ background: #fff; border: 1px solid #fff}
-a.image_link:hover{ border: 1px solid #eee; background: #fff}
-table td span.type0,table td span.type1,table td span.type2,table td span.type3,table td span.type4{ background: #E7EDF5; border-bottom: 1px solid #E7EDF5; color: #333; font-weight: bold; font-size: 12px; padding:2px 10px; width: 80px; display: block}
-table td span.type1{ background: #E6F2CC; border-bottom: 1px solid #E6F2CC}
-table td span.type2{ background: #FFD29B; border-bottom: 1px solid #FFD29B}
-table td span.type3{ background: #DDFFAA; border-bottom: 1px solid #DDFFAA}
- .rank_img{ margin-right: 3px}
-ul.admin_links {padding: 5px; border: 1px solid #eee; background: #F9FBFD}
-ul.admin_links li{ float: left; padding-left: 20px}
-table.funds_table{ background: #FAFCFE}
-table.funds_table th{ background: #304D74; color: #fff; padding: 5px}
- .myfund_hint{ padding: 5px; border: 1px solid #FF8C00; background: #FFF4E5; width: 95%; margin: 5px auto; font-size: 12px}
-.myfund_hint li{ float: left; margin-right: 10px}
-.myfundstable{ padding: 5px; font-size: 12px}
-.myfundstable th,.myfundstable td{ padding: 5px 2px; text-align: right}
-.myfundstable th{ background: #EFF4F8; border-top:1px solid #D0DCEC; border-bottom:1px solid #D0DCEC}
-.myfunds_summary{ padding: 5px; margin: 10px 0; font-size: 12px}
-.myfunds_summary td{ font-weight: bold; padding: 5px 10px; text-align: right; background: #FBFBFB; border-bottom: 1px solid #D0DCEC; border-top: 1px solid #D0DCEC}
-.bold{ font-weight: bold}
- div.myfund_menu{ float: right; width: 150px; padding: 10px 10px; background: #F7F9FC; border: 1px solid #B8CAE2; font-size: 12px; margin-right: 20px}
-div.myfund_menu li{ margin-bottom:5px; padding: 5px; padding-left:20px; background:#fff url(/images/small/myfund_menu.gif) no-repeat 5% 50%}
-div.myfund_menu li.myfund_sec_menu{ margin-left:10px; margin-bottom:5px; padding: 5px; padding-left:20px; background: #F7F9FC url(/images/small/sec_menu.gif) no-repeat 5% 50%}
-div.myfund_menu li a{ padding: 5px}
-div.myfund_menu li a:hover{ padding: 5px}
- .no_myfund_info{ padding: 250px 0; text-align: center; background: #F9FBFD}
-.no_myfund_info a{ padding-right: 20px; background:url(/images/small/no_myfund_info.gif) no-repeat right 50%}
-.no_myfund_info a:hover{ background: #234762; padding-right: 20px; color: #F1F6FA}
-  .intro{ margin: 0 auto; width: 855px}
-.intro a:hover{ background: #fff}
-.new{ margin-top: 15px; padding: 3px 50px; border-top: 1px dotted #eee; background: #F9FBFD}
-.new img{ margin: 10px; float: left; clear: left; padding: 10px; border: 1px solid #eee; background: #fff}
-.new_know{ padding: 8px; border-bottom: 1px dotted #E1E9F3; margin-bottom: 5px}
-.new_know h1{ margin-top: 25px; margin-left: 200px; color: #3A424A}
-.new_know p{ margin-top: 15px; margin-left: 220px; padding-left: 15px; background: url(/images/small/new_function.gif) no-repeat left 50%}
-.new_know p .specil{ color: #EC8200; font-weight: bold; border-bottom: 1px dotted #AE6000}
-.login_hint{ text-align: center; border: 1px dotted #eee; padding: 5px 0; font-size: 12px; background: #F9FBFD}
-.user_info p{ margin: 5px 0}
-.lp span.asmall span.high_display_name{ color: #0033cc; display: inline}
-.about p{ margin: 5px; text-indent: 10px}
- .myfavorites_hint{ border: 1px solid #7598C6; background: #F1F5FA}
-#addmyfav{ padding: 5px; text-align: center; margin: 10px auto; border: 1px solid #FFBB5E; width: 95%; background: #FFF5E8}
-table.top10{ margin: 5px 0px; border: 2px solid #C1D1E6}
-table.top10 th.la{ background: #F1F5FA; border-bottom: 2px solid #C1D1E6; color: #112768}
-table.top10 td{ padding: 10px; background: #FCFDFE}
-table.top10 td.recent{ border-right: 1px solid #EAF1F8}
-table.top10 td.top{ background: #fff}
-table.top10 td li{ background: url(/images/small/hot.gif) no-repeat 5px 50%; margin-left: 10px; padding-left:20px}
-.container{ width: 800px; height: 300px; margin: 5px auto}
- #shdata,#szdata{ float: right; width: 220px; padding: 10px; font-size: 12px}
-#shdata table td,#szdata table td{ border-bottom: 1px solid #EBF2F7}
-#shdata table,#szdata table{ border: 1px solid #C8D8E7; background: #FAFCFD}
-#szrealtimeimg,#shrealtimeimg{ float: left; border: 1px solid #eee; border-right: 2px solid #eee; border-bottom: 2px solid #eee; padding: 5px}
-#sh,#sz{ padding: 20px 10px; margin: 10px 0; border-bottom: 1px solid #DEE7F1}
- a.help{ padding:0px; float: right}
-a.help:hover{ background: none; padding: 0px}
-a.status_check:hover{ background: #fff}
-#toggle_netvalue a{ color: #fff; background: #FF0000; font-weight: bold}
- #create_book{ padding: 15px; background-color: #FFF7EC; margin: 10px 0}
-#error{ background: #f00; color: #fff; padding: 5px; margin:5px}
-#message{ background: #228B22; color: #fff; padding: 5px; margin:5px}
-#book_items{ text-align: center; padding: 5px; background: #F4F7FD; margin: 10px 0}
-#book_items li{ padding: 5px ; padding-right: 200px; text-align: right; margin: 5px; background: #EDF1F7}
-#book_menu{ padding: 5px; background: #FDFDF2; color: #CA6F00; border: 1px solid #EEEE90; font-weight:bold; margin: 5px 0; padding-bottom: 2px}
-#book_menu li{ float: left; margin-left: 50px; width: 60px; height: 26px}
-#book_menu li.active_tool{ background: url(../images/netvalue_active.gif) no-repeat center top }
-#book_menu li a{ color: #CA6F00}
-#book_menu li.active_tool a{ color: #573900}
-#book_menu li a:hover{ color: #CA6F00; background: transparent}
-#calendar{ background: #FFFFFF; text-align: center}
-#calendar td{ padding: 10px 5px; border-bottom: 1px dashed #529000; padding-bottom: 3px}
-.calendar_header td{ background: #F6FBEC; font-weight: bold; border-top: none}
-.calendar_header a.nMonth{ color: #2B4800; font-weight: bold}
-.calendar_header a.nMonth:hover{ background: #9ACD32}
-#calendar .calendar_header td{ border-bottom: none}
-#calendar .calendar_weeks td{ background: #7B9EC8; padding: 5px; border-bottom: none; color: #fff;; font-weight: bolder}
-#book_summary{ padding: 10px; background: #FFFFDF; border: 1px solid #3F8000; color: #526E1A; margin-top: 20px; font-weight: bold}
-#book_summary li{ float: left; margin-left: 40px}
- #category_info{ padding: 15px; background: #F5FAEA; border: 1px solid #BFDF77; margin: 10px 0}
-li.category_header{ background: #4682B4; color: #fff}
-#income_categories,#out_categories{ background: #FFF5E1; border: 1px solid #FFD377; width: 40%; padding: 10px; margin-left: 30px; float: left; margin-bottom: 10px; display: inline}
-#income_categories_table li,#out_categories_table li{ padding: 3px}
-#out_categories{ float: left; background: #EBF6FE; border: 1px solid #92CFFA}
-table.category td{ padding: 5px 10px}
-#add_category{ padding: 15px; background: #F4F8FB; border: 1px solid #C2D8E9}
-#add_category li{ float: left; padding: 10px; margin-left: 10px}
-ul.category_item li{ width: 80px; float: left}
- td.time_now{ background: #F3F3F3; font-weight: bold}
-td.no_now{ color: #623600}
- #add_finace,#day_detail,#add_dilary,#show_dilary{ position: absolute; top: 176px; left: 150px; width: 400px; background: White; border: 5px solid #CEDBF2; border-top: none; filter: progid:DXImageTransform.Microsoft.Shadow(color="#999999", Direction=135, Strength=3); z-index: 999}
-#add_finace div.header,#add_dilary div.header,#show_dilary div.header,#day_detail div.header{ padding:5px 10px; background: #4281D2; font-weight: bold; color: White}
-#add_finace h1,#add_dilary h1,#show_dilary h1,#day_detail h1{ float: left}
-#day_detail{ top: 170px; left: 20px; width: 650px}
-#show_dilary{ top: 180px; left: 200px; width: 300px; z-index: 1100}
-#add_finace{ top: 176px; left: 150px; width: 400px; height: 320px}
-.close_dialog{ float: right}
-table.detail_list th{ background: #345984; color: #fff; font-weight: bold}
-span.detail_item{ margin:0 10px}
-#book_help{ padding: 5px; background: #FFF8EA; border: 1px solid #FFCF6A; margin-bottom: 5px; color: #374912; text-align: center}
-img.book_hint{ vertical-align: middle; margin: 0 5px}
-table.auto_records{ background: #FFF7EE; text-align: center}
-table.auto_records td,table.auto_records th{ padding: 2px 5px}
-table.auto_records th{ padding: 5px 5px; background: #D2EAFF}
-table.auto_records caption{ background: #4169E1; padding: 5px; color: White}
-#add_auto_record{ padding: 10px; margin: 5px 0; background: #F4FAFF}
-a.add_dilary{ padding: 0}
-a.add_dilary:hover{ padding: 0; background: transparent; color: #204DCE}
- #show_dilary ul{ padding: 10px; background: #FBFCFF; border: 1px solid #A4BBFF}
-#show_dilary ul li{ margin: 5px 0px}
- #search_conditions{ margin: 5px 0; padding: 5px; background: #FFF5EC; border: 5px solid #FFC693}
-#dilary_search_conditions{ margin: 5px 0; padding: 5px; background: #F6F6F6; border: 5px solid #CACACA}
-#search_history_conditions{ margin: 5px 0; padding: 5px; background: #FFFEEC; border: 5px solid #FFF3B0}
-#search_finace_item{ margin: 3px 0; border: 1px solid #4682B4; padding-bottom: 5px}
-#search_finace_item a{ padding: 0px}
-#search_finace_item th{ padding: 2px 0; background: #455C67; color: #fff; font-weight: bold}
-#search_finace_item td{ margin: 3px 0; background: #fff; text-align: center; border-bottom: 1px dashed #587483}
-#search_finace_foot td{ background: #2F4F4F; color: #fff; font-weight: bold}
-.sort_myfund{ background: #E8F0F6}
- #report_tool{ background: #FFF9D4; border: 3px solid #FFD700; padding: 5px 10px; vertical-align: middle}
-.month_report{ padding: 5px; background: #F3F6FA; width: 320px; float: left; margin: 10px 0}
-.month_report h1{ background: #547FB8; color: #fff; padding: 5px}
-.month_report ul li{ padding: 5px}
-table.summary_table{ background: #547FB8; color: #fff; padding: 5px}
-table.summary_table td{ padding-left: 20px}
-#month_report_item{ margin-top: 50px; width: 140px; float: left; padding: 10px 0; font-weight:bold; color: #2F4F4F; background: #F5FAFA; border-top: 5px solid #295252}
-#month_report_item li{ padding: 10px}
-#month_report_item li a{ display: block; width: 90%; padding-left: 5px; color: #264273; background: #FBFDFD}
-#month_report_item li a.active{ display: block; width: 90%; padding-left: 5px; color: #FBFDFD; background: #264273}
-#month_report_item li a:hover{ display: block; width: 90%; padding-left: 5px; color: #264273; background: #FBFDFD}
-#year_summary{ background: #FAFBFB; margin: 5px 0; padding: 10px; text-align: center}
-table.year_summary_table caption{ padding: 5px 0; font-size: 110%; font-weight: bold; background: #636363; color: #fff}
-table.year_summary_table th{ padding: 5px 0; background: #EAEAEA}
-table.year_summary_table td{ border-bottom: 1px dashed #ccc}
-div.news_block{ width: 325px; height: 300px; float: left; background: #F4F8FB; padding: 5px; margin-right: 5px; margin-bottom: 5px}
-.news_block h1{ background: #346891; color: #fff; padding: 5px}
-.news_block a{ font-size: 95%}
-.news_block li{ margin: 6px 0}
-div.news_blog{ width: 180px; float: right; padding: 10px; background: #F2F8FF}
-div.news_blog li{ margin: 6px 0}
-div.news_blog a{ font-size: 95%}
-div.news_blog h1{ background: #DB7900; color: #fff; padding: 5px}
-#new_img{ position: absolute; top: 88px; left: 630px}
- #recent_book{ padding: 10px; background: #FBF5F0; margin-bottom: 10px}
-.recent_book_item{ width: 103px; height: 120px; float: left; margin-right: 6px}
-div.recent_book_item img{ float: none}
-td.no_active{ background:#fff url(/images/no_actie.gif) no-repeat right top; color: #f00}
- marquee.recent_user{ background: #FFFAF4; border: 1px solid #FFD4A4; padding: 2px 0; color: #CE6D00; font-weight: bold; margin-bottom: 3px }
- .pageheader img.user_picture{ width: 150px; height: 150px}
-#person_bio{ margin-left: 20px; width: 200px; height: 140px; background: #FFFCE8; padding: 10px; margin-top: 10px; float: left}
-#person_summary{ margin-left: 20px; background: #F9F9F9; padding: 10px; margin-top: 10px; float: left; width: 150px; height: 140px}
-#person_bio li{ margin-bottom: 3px}
-#person_bio li.name{ font-size: 120%; font-weight: bold; color: #736500; padding-bottom: 5px}
-#user_topics,#user_moni_topics{ padding: 10px; background: #FAFBFB}
-#user_topics li,#user_moni_topics li{ border-bottom: 1px dashed #ccc; margin: 3px 0}
-#user_topics li a,#user_moni_topics li a{ width: 400px; float: left}
-#user_topics li.name,#user_moni_topics li.name{ font-size: 110%; font-weight: bold; color: #68798A; padding-bottom: 5px}
-#user_moni_topics{ background: #F7FBF0}
-.railway img{ float: none}
-#netvalue_history{ font-size: 12px; width: 350px; height: 400px; overflow: auto; background: #FFFFF0; border: 1px solid #E0E0E0}
-#netvalue_history td{ padding: 1px 2px; border-bottom: 1px solid #E0E0E0}
-.hot_topic{ border-top: 5px solid #DCDCDC; background: #FBFBFB; padding: 10px 6px; width: 185px; float: right; clear: right; font-size: 12px; line-height: 2em; color:#333; margin-top: 20px}
-a.window_delete{ padding: 0px}
-a.window_delete:hover{ padding: 0px}
- #dilary_list{ padding: 10px}
-#dilary_list dl{ margin-bottom: 10px; background: #FBFBF2; border-top: 2px solid #F6F8ED; border-left: 2px solid #F6F8ED; border-bottom: 2px solid #E6E6B0; border-right: 2px solid #E6E6B0; padding: 10px 5px}
-#dilary_list dt{ margin-bottom: 5px; padding: 3px; background: #F0F0CF}
-#dilary_list dd{ text-indent: 20px}
-tr.netvalue_header th{ padding: 5px 0; font-size: 12px; background: #F5F5F5}
-tr.netvalue_table_header th{ padding: 5px 0; font-size: 12px; background: #2E486D; color: #fff; text-align: center; cursor: pointer}
-.alternate{ background: #F5F5F5}
-#netvalues_table td{ border-bottom: 1px dashed #B0C4DE; padding: 3px 0}
-table.sort18 th.table-sorted-desc {background:#6D8FC1 url(../images/18_descending.gif) no-repeat left center; padding-left: 10px}
-table.sort18 th.table-sorted-asc {background:#6D8FC1 url(/images/18_ascending.gif) no-repeat left center; padding-left: 10px}
-#headad{ float: right; clear: right; margin: 3px 10px 6px 0}
-div.list_hot_topic{ margin: 5px auto; background: #F3FEE9; border: 1px solid #E3F6CD; padding: 10px}
-div.list_hot_topic .col_list_hot_topic{ background: #F9FFF4; width: 290px; padding: 5px; float: left}
-#search_history{ font-size: 12px; padding: 10px; background: #FCFCFC; border: 1px solid #eee}
-#search_history table th{ font-weight: bold; background: #838383; color: #fff; padding: 3px 0px}
-#search_history table td{ padding: 3px 0px; text-align: center; border-bottom: 1px dashed #CFCFCF}
-#bottom_ad{ margin: 10px 0px 0px 100px}
-.online_user li{ float: left; margin-left: 10px; padding: 10px 0 10px 20px; background: url("http://aa.a.5d6d.com/userdirs/8/7/chacha163/attachments/day_070812/20070812_d23df34dba4e27dd3778cecxc6nZHGNO.gif") no-repeat left center}
+#facebox .b {background:url(/facebox/b.png)}
+#facebox .tl {background:url(/facebox/tl.png)}
+#facebox .tr {background:url(/facebox/tr.png)}
+#facebox .bl {background:url(/facebox/bl.png)}
+#facebox .br {background:url(/facebox/br.png)}
+#facebox {position: absolute; top: 0; left: 0; z-index: 100; text-align: left}
+#facebox .popup {position: relative}
+#facebox table {border-collapse: collapse}
+#facebox td {border-bottom: 0; padding: 0}
+#facebox .body {padding: 10px; background: #fff; width: 370px}
+#facebox .loading {text-align: center}
+#facebox .image {text-align: center}
+#facebox img {border: 0; margin: 0}
+#facebox .footer {border-top: 1px solid #DDDDDD; padding-top: 5px; margin-top: 10px; text-align: right}
+#facebox .tl, #facebox .tr, #facebox .bl, #facebox .br {height: 10px; width: 10px; overflow: hidden; padding: 0}
+#facebox_overlay {position: fixed; top: 0px; left: 0px; height:100%; width:100%}
+.facebox_hide {z-index:-100}
+.facebox_overlayBG {background-color: #000; z-index: 99}
+* html #facebox_overlay { position: absolute; height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px')}
+ a {color: #2C629E; text-decoration: none}
+a:hover {text-decoration: underline}
+a.rounded, .button {outline: none; border: none; text-decoration: none; cursor: pointer; white-space: nowrap; vertical-align: middle;  display: -moz-inline-box; display: inline-block; overflow: visible;  }
+.button {color: #fff; background-color: #3B5998; padding: 3px 10px}
+.button:hover {background-color: #3B79A8}
+a.small{ padding: 1px 5px}
+a.tool{ color: #333; background-color: #fff}
+a.tool:hover{ background-color: #ddd}
+a img {border: none}
+.t_input,select {border:1px solid #DDDDDD; line-height:16px; padding:3px 2px}
+li{ margin: 5px 0}
+form.inline{ display: inline}
+.hint{ font-size: 90%; color: #f00}
+  #hd{ background-color: #3B5998; height:40px; padding: 0 20px; margin-bottom: 20px}
+#hd .logo{ float: left; margin-right: 30px}
+#hd{ color: #fff}
+#hd .menu{ float: left}
+#hd .menu li{ float:left; line-height:20px; padding:10px; vertical-align:top}
+  #app_sidebar{ background-color: #F7F7F7; border: 1px solid #ddd; font-size: 110%}
+.app_list{ padding: 15px 0}
+.app_list li {height:20px; line-height:21px; overflow:hidden; position:relative; padding:5px 10px 5px 30px}
+.app_list li.title{ padding:5px 10px 5px 10px; background-color: #d8e8ff}
+.app_list li img {margin:0 5px 0 0; vertical-align:middle}
+.app_list em {font-size:12px; font-style:normal; font-weight:normal; position:absolute; right:20px}
+.app_list em a {color:#999999}
+  #ft {background-color: #EDF2F6; margin-top: 30px; color:#333333; padding:10px 0; text-align:center}
+#ft a{ color:#333}
+#ft p{ margin: 3px 0}
+.r_option {float:right; font-weight:normal}
+  .c_form {padding:0.5em 3em}
+.formtable{ width: 100%}
+.formtable caption {color:#666666; padding:10px 0; font-weight:bold}
+.formtable caption h2 {border-bottom:1px solid #CCCCCC; color:#333333; font-size:14px; padding-bottom:8px}
+.formtable caption p {margin-top:8px; font-weight:normal}
+.formtable th {padding-right:1em; text-align:right}
+.formtable td, .formtable th {padding:5px}
+  #instances{ padding:10px}
+.instance_info, .group{ padding: 10px; background-color: #EDF2F6}
+.instance_info li{ margin: 5px; color: #333}
+.instance_info li span{ color:#000; margin: 0px 5px}
+ .toolbar{ background-color: #EDF2F6 ; padding: 5px 10px; margin: 10px 0}
+div.toolbar div.small{ text-align: right}
+ #instance_output{ padding: 10px; background-color: #333; color:#fff; overflow: scroll}
+  .group{ margin-bottom: 15px; border-top: 5px solid #3B5998}
+.group h1{ padding: 5px}
+.group p{ margin: 5px 0}
+#group_perm_list{ background-color: #555; color:#fff; margin:5px 0}
+#group_perm_list li{ padding: 5px}
+.add_rule{ display:none}
+.facebox{ display:none; padding:5px}
+.facebox h2{ color: #3B5998; padding:5px; border-bottom: 1px solid #777}
+.facebox form p{ margin:10px}
+.facebox form p label{ width: 40px; display: inline-block}
+  .flash{ padding: 5px 20px}
+.flash_notice{ background-color: #00a651; color: #fff}
+.flash_warning{ background-color: #f7941d; color: #fff}
+.flash_error{ background-color: #f00; color: #fff}
+  #keys_list li, #buckets_list li{ margin: 0 0 10px 10px}
+#buckets_list{ background-color: #EDF2F6; padding: 10px}
+#buckets_list li{ padding: 10px; background-color: #333; color: #fff}
+#buckets_list li a{ color: #fff}
+#buckets_list li a.tool{ color: #333}
+ 

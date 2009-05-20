@@ -264,7 +264,7 @@ div.toolbar div.small{
 #keys_list li, #buckets_list li{
   margin: 0 0 10px 10px;
 }
-#buckets_list{
+#buckets_list, #objects_list{
   background-color: #EDF2F6;
   padding: 10px;
 }
