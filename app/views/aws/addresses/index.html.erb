@@ -1,0 +1,49 @@
+<% @title = 'IP管理' %>
+
+
+<div id="address_list">
+
+	<div class="yui-ge rounded toolbar">
+		<div class="yui-u first">
+			<%= link_to "请求新的IP",allocate_address_path, :class => "rounded {transparent} button" %>
+		</div>
+		<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+	</div>
+
+	<% unless @addresses.empty? %>
+
+	<ul>
+		<% @addresses.each do |address| %>
+		<li>
+			<b><%= address[:public_ip] %></b>
+			<% unless address[:instance_id].blank? %>
+			关联主机: <%= link_to address[:instance_id], "/aws/instances" %>
+			<%= link_to "解除关联",disassociate_address_path(address[:public_ip].ip_to_url), :class => "rounded {transparent} button", :onclick => "return confirm('确认解除关联?')" %>
+			<% else %>
+				<% form_tag  "/aws/addresses/#{address[:public_ip].ip_to_url}/associate", :class => "inline",  :id => "associate_form_#{address[:public_ip].ip_to_url}" do %>
+				<select name="instance_id">
+					<option value="">关联主机...</option>
+					<% @instances.each do |instance| %>
+					<option value="<%= instance[:aws_instance_id] %>"><%= instance[:aws_instance_id] %> (<%= instance[:aws_state] %>)</option> 
+					<% end %>
+				</select>
+				<input type="submit" value="关联" class="rounded {transparent} button" onclick="$('#associate_form_<%= address[:public_ip].ip_to_url %>').submit()">&nbsp;
+				<% end %>
+			<% end %>
+			<%= link_to "释放该IP", release_address_path(address[:public_ip].ip_to_url), :onclick => "return confirm('确实释放该IP')", :class => "rounded {transparent} button" %>
+		</li>
+		<% end %>
+
+	</ul>
+
+	<% else %>
+	<p><i>暂时还没有相关IP</i></p>
+	<% end %>
+
+</div>
+
+<script type="text/javascript" charset="utf-8">
+	$().ready(function  () {
+		$('form.inline div:first-child').css({"display":"inline"});
+	});
+</script>

@@ -14,4 +14,9 @@ $().ready(function(){
   },  function  () {
     $(this).css({"background-color": "#F7F7F7"});
   });
+  $('a[rel*=facebox]').facebox();
+  
+  $('div.flash').click(function  () {
+    $(this).fadeOut();
+  });
 });

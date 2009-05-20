@@ -1,0 +1,10 @@
+<div class="yui-ge rounded toolbar">
+	<div class="yui-u first"><%= params[:id] %></div>
+	<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+</div>
+
+<div id="instance_output">
+	<p><%= @output[:aws_timestamp] %></p>
+	<br/>
+	<div><pre><%= @output[:aws_output] %></pre></div>
+</div>

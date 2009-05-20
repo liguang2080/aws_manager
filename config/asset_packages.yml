@@ -3,9 +3,11 @@ javascripts:
 - base: 
   - jquery-1.3.2.min
   - jquery.corners.min
+  - facebox
   - less_routes
   - application
 stylesheets: 
 - base: 
   - reset-fonts-grids
+  - facebox
   - display

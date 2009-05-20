@@ -1,0 +1,66 @@
+<% @title = '安全组管理' %>
+
+<div id="groups">
+
+	<div class="yui-ge rounded toolbar">
+		<div class="yui-u first">
+			<%= link_to "新建安全组",'#group_create', :class => "rounded {transparent} button", :rel => "facebox" %>
+		</div>
+		<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+	</div>
+
+
+	<% @groups.each do |group| %>
+	<div id="group_<%= group[:aws_group_name] %>" class="group rounded">
+		<div class="yui-ge rounded">
+
+			<div class="yui-u first">
+				<b>组名:<%= group[:aws_group_name] %></b> : <em><%= group[:aws_description] %></em>
+			</div>
+			<div class="yui-u small"><%= link_to "删除",delete_group_path(group[:aws_group_name]), :class => "rounded {transparent} button small", :onclick => "return confirm('确认删除组?')" %></div>
+		</div>
+
+		<ul id="group_perm_list" class="rounded">
+			<% group[:aws_perms].each do |perm| %>
+			<li>
+				<% if perm[:group] %>
+					Allow <%= perm[:owner] %> <%= perm[:group] %>
+					<%= link_to "X","/aws/groups/#{group[:aws_group_name]}/revoke?group=#{perm[:group]}&owner=#{perm[:owner]}" , :class => "rounded {transparent} button small tool", :onclick => "return confirm('确认删除组?')" %>
+				<% else %>
+					允许 <%= perm[:protocol].upcase %> 源:<%= perm[:cidr_ips] %> 端口: 从<%= perm[:from_port] %>到<%= perm[:to_port] %>
+					<%= link_to "X","/aws/groups/#{group[:aws_group_name]}/revoke?from=#{perm[:from_port]}&to=#{perm[:to_port]}&protocol=#{perm[:protocol]}&ip=#{perm[:cidr_ips]}" , :class => "rounded {transparent} button small tool", :onclick => "return confirm('确认删除规则?')" %>
+				<% end %>
+			</li>
+			<% end %>
+		</ul>
+
+		<p><%= link_to'+ 增加新的规则', '#', :onclick => "$('#add_rule_#{group[:aws_group_name]}').slideToggle()" %></p>
+
+		<div id="add_rule_<%= group[:aws_group_name]%>" class="add_rule">
+			<% form_tag authorize_group_path(group[:aws_group_name])  do%>
+				<select name="protocol">
+					<option value="tcp">tcp</option>
+					<option value="udp">udp</option>
+					<option value="icmp">icmp</option>
+				</select>
+				IP <input name="ip" type="text"/>
+				端口:从 <input name="from" type="text" size="4"/>
+				到 <input name="to" type="text" size="4"/>
+				<input type="submit" value="增加"/> <%= link_to '取消', '#', :onclick => "$('#add_rule_#{group[:aws_group_name]}').slideToggle()" %>
+			<% end %>
+		</div>
+
+	</div>    
+	<% end %>
+</div>
+
+
+
+<div id="group_create" class="facebox">
+	<h2>新建安全组:</h2>
+	<% form_tag create_group_path do %>
+		<p><label>组 名: </label><input type="text" name="name" class='t_input'/><em class="hint">(请不要使用空格与下划线)</em></p>
+		<p><label>描 述: </label><input type="text" name="description" class='t_input' /><em class="hint">(*)</em></p>
+		<p><input type="submit" value="创建"/></p>
+	<% end %>
+</div>

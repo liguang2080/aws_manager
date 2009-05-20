@@ -15,16 +15,36 @@ a.rounded, .button {
 .button {
   color: #fff;
   background-color: #3B5998;
-  padding: 5px 10px;
+  padding: 3px 10px;
 }
 .button:hover {
   background-color: #3B79A8;
+}
+a.small{
+  padding: 1px 5px;
+}
+a.tool{
+  color: #333;
+  background-color: #fff;
+}
+a.tool:hover{
+  background-color: #ddd;
 }
 a img { border: none; }
 .t_input,select {
   border:1px solid #DDDDDD;
   line-height:16px;
   padding:3px 2px;
+}
+li{
+  margin: 5px 0;
+}
+form.inline{
+  display: inline;
+}
+.hint{
+  font-size: 90%;
+  color: #f00;
 }
 /*global end*/
 
@@ -41,7 +61,7 @@ a img { border: none; }
   margin-right: 30px;
 }
 
-#hd a{
+#hd{
   color: #fff;
 }
 
@@ -55,20 +75,6 @@ a img { border: none; }
   vertical-align:top;
 }
 
-#hd .nav_account{
-  color: #fff;
-  float: right;
-  width: 185px;
-}
-.login_thumb {
-  background:transparent url(../images/v2/thumb20bg.gif) no-repeat scroll 0 0;
-  display:block;
-  float:left;
-  height:24px;
-  margin:6px 6px 0 0;
-  padding:3px 0 0 3px;
-  width:24px;
-}
 /*head end*/
 
 /*side bar*/
@@ -153,4 +159,103 @@ a img { border: none; }
 .formtable td, .formtable th {
   padding:5px;
 }
+/*end*/
+
+/*instalce_info*/
+#instances{
+  padding:10px;
+}
+.instance_info, .group{
+  padding: 10px;
+  background-color: #EDF2F6;
+}
+.instance_info li{
+  margin: 5px;
+  color: #333;
+}
+.instance_info li span{
+  color:#000;
+  margin: 0px 5px;
+}
+/*end*/
+
+.toolbar{
+  background-color: #EDF2F6 ;
+  padding: 5px 10px;
+  margin: 10px 0;
+}
+div.toolbar div.small{
+  text-align: right;
+}
+
+/* instance output*/
+#instance_output{
+  padding: 10px;
+  background-color: #333;
+  color:#fff;
+  overflow: scroll;
+}
+/*end*/
+
+/*group*/
+.group{
+  margin-bottom: 15px;
+  border-top: 5px solid #3B5998;
+}
+.group h1{
+  padding: 5px;
+}
+.group p{
+  margin: 5px 0;
+}
+#group_perm_list{
+  background-color: #555;
+  color:#fff;
+  margin:5px 0;
+}
+#group_perm_list li{
+  padding: 5px;
+}
+
+.add_rule{
+  display:none;
+}
+.facebox{
+  display:none;
+  padding:5px;
+}
+.facebox h2{
+  color: #3B5998;
+  padding:5px;
+  border-bottom: 1px solid #777;
+}
+.facebox form p{
+  margin:10px;
+}
+.facebox form p label{
+  width: 40px;
+  display: inline-block;
+}
+/*group end*/
+
+/*flash*/
+.flash{
+ padding: 5px 20px; 
+}
+.flash_notice{
+  background-color: #00a651;
+  color: #fff;
+}
+.flash_warning{
+  background-color: #f7941d;
+  color: #fff;
+}
+.flash_error{
+  background-color: #f00;
+  color: #fff;
+}
+/*flash end*/
+
+/*keys list*/
+#keys_list
 /*end*/

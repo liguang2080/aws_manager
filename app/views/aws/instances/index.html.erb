@@ -1,0 +1,36 @@
+<% @title = 'Instances' %>
+
+<% unless @instances.empty? %>
+
+<div id="instances">
+	<% @instances.each_with_index do |instance, i| %>
+		<ul class="instance_info rounded">
+			<li><span>实例ID</span>:<%= instance[:aws_instance_id] %></li>
+			<li><span>状态</span>: <%= instance[:aws_state] %></li>
+			<li><span>镜像ID</span>: <%= instance[:aws_image_id] %></li>
+			<li><span>启动时间</span>: <%= time_ago_or_time_stamp(Time.parse(instance[:aws_launch_time])) %></li>
+			<li><span>相关操作</span>:	
+				<%= link_to "简要信息", output_instance_path(instance[:aws_instance_id]), :class => "rounded {transparent} button" %>
+				<% if instance[:aws_state] == 'running' %>
+				<%= link_to "重启", reboot_instance_path(instance[:aws_instance_id]), :class => "rounded {transparent} button", :onclick => "return confirm('确认重启?')" %>
+				<%= link_to "关闭", terminate_instance_path(instance[:aws_instance_id]), :class => "rounded {transparent} button", :onclick => "return confirm('确认关闭?')" %>
+				<% end %>
+			</li>
+			<li><span>类型</span>: <%= instance[:aws_instance_type] %></li>
+			<li><span>所属安全组</span>: <% instance[:aws_groups].each do |group| %><%= link_to group, "/groups" %><% end %></li>
+			<li><span>证书</span>: <%= link_to instance[:ssh_key_name], "/keys" %></li>
+			<li><span>所在区域:</span>: <%= instance[:aws_availability_zone] %></li>
+			<% if instance[:aws_state] == 'running' %>
+			<li><span>外部URL: </span><%= instance[:dns_name] %> <a href="http://<%= instance[:dns_name] %>" target="_new">查看</a></li>
+			<li><span>DNS</span>: <%= instance[:private_dns_name] %></li>
+			<% end %>
+		</ul>
+	<% end %>
+</div>
+
+<% else %>
+
+<p><i>当前还没有实例.</i></p>
+<p><%= link_to '选取一个映像', '/images' %> 以启动新的实例.</p>
+
+<% end %>

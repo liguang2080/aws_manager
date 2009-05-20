@@ -11,6 +11,14 @@ class String
     self.strip.downcase.gsub('&', 'and').gsub(' ', '-').gsub(/[^\w-]/,'')
   end
   
+  def ip_to_url
+    self.strip.downcase.gsub('.','-')
+  end
+  
+  def url_to_ip
+    self.strip.downcase.gsub('-','.')
+  end
+  
   def from_safe_uri
     self.gsub('-', ' ')
   end

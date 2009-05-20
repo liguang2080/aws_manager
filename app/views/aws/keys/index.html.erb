@@ -1,0 +1,31 @@
+<% @title = '密钥管理' %>
+
+<div id="keys">
+
+	<div class="yui-ge rounded toolbar">
+		<div class="yui-u first">
+			<%= link_to "新建密钥",'#add_key', :class => "rounded {transparent} button", :rel => "facebox" %>
+		</div>
+		<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+	</div>
+
+	<div id="add_key" style="display:none">
+		<form action="/key" method="POST">
+			Name <input name="key_name" type="text"/>
+			<input type="submit" value="create"/> <%= link_to 'Cancel', '#', :onclick => "$('#add_key').toggle()" %>
+		</form>
+	</div>
+
+
+
+	<ul id="keys_list">
+		<% @keys.each do |key| %>
+		<li>
+		<b><%= key[:aws_key_name] %></b> <small><%= key[:aws_fingerprint] %></small> 
+		<%= link_to "X",delete_key_path(key[:aws_key_name]), :class => "rounded {transparent} button small tool", :onclick => "return confirm('确认删除?')" %>
+		</li>
+		<% end %>
+	</ul>
+
+</div>
+
