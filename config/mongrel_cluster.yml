@@ -1,6 +1,6 @@
 --- 
 user: rails
-cwd: /home/rails/projects/ultratrce_3_0
+cwd: /home/rails/projects/ultratrace_3_0
 log_file: log/mongrel.log
 port: "8000"
 environment: production
