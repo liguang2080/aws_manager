@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title><%= @page_title || '' %> 东方红财富网</title>
+	<meta name="description" content="财道,交友,网络账本,网络记账,账本,在线记账,财客,个人在线记账,自动记账,东方红基金网,基金净值,基金管理,基金论坛,我的基金,每日基金净值查询,自动计算盈亏状态"/>
+	<meta name="keywords" content="财道,交友,网络账本,网络记账,账本,在线记账,财客,个人在线记账,自动记账,东方红基金网,基金净值,基金管理,基金论坛,我的基金,每日基金净值查询,自动计算盈亏状态"/>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+	<bookmark rel="bookmark" href="/favicon.ico" type="image/x-icon"/>
+	<%= stylesheet_link_merged :base %>
+
+</head>
+<body id="doc2" class="yui-t1">
+	<div id="hd" class="rounded_bottom">
+		<h1 class="logo"><%= image_tag "v2/logo.png", :alt => "caidao123" %></h1>
+		<ul class="menu">
+			<li><a href="space-home.html">首页</a></li>
+			<li><a href="space.html">个人主页</a></li>
+			<li><a href="space-friend.html">好友</a></li>
+			<li><a href="network.html">随便看看</a></li>
+			<li><a href="space-pm.html">消息</a></li>
+		</ul>
+		<div class="nav_account">
+			<a href="space-973719.html" class="login_thumb"><%= image_tag "v2/avatar.jpg", :alt => "头像", :width => "20", :height => "20" %></a>
+			<a href="space-973719.html" class="loginName">lg2046</a>
+			<br />
+			<a href="cp.php?ac=invite">邀请</a> | <a href="cp.php?ac=task">任务</a> | <a href="cp.php">设置</a> | <a href="cp.php?ac=common&op=logout">退出</a>
+		</div>
+	</div>
+	<div id="bd">
+
+		<div id="yui-main">
+			<div class="yui-b">
+				<%= yield %>
+			</div>
+		</div>
+
+		<div class="yui-b">
+			<div id="app_sidebar" class="rounded">
+				<ul class="app_list">
+					<li><%= image_tag "v2/blog.gif", :alt => "日志"%><a href="space-blog.html">日志</a><em><a href="cp.php?ac=blog">发表</a></em></li>
+					<li><%= image_tag "v2/group.gif", :alt => "群组"%><a href="space-mtag.html">群组</a><em><a href="cp.ph">话题</a></em></li>
+					<li><%= image_tag "v2/forum.gif", :alt => "论坛"%><a href="space-mtag.html">论坛</a></li>
+					<li><%= image_tag "v2/coins.png", :alt => "我的基金"%><a href="space-share.html">我的基金</a></li>
+					<li><%= image_tag "v2/book.png", :alt => "我家账本"%><a href="space-share.html">我家账本</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<div id="ft" class="rounded">
+
+		<p class="r_option">
+			<a href="javascript:;" onclick="window.scrollTo(0,0);" id="a_top" title="TOP"><%= image_tag "v2/top.gif", :style => "padding: 5px 6px 6px;" %></a>
+		</p>
+		<p>
+			UCenter Home - 
+			<a href="lg2046@gmail.com">联系我们</a>
+			- 备案中..
+		</p>
+
+		<p>
+			Powered by <a  href="http://www.caidao123.com" target="_blank"><strong>caidao123.com</strong></a>	&copy; 2008-2009
+		</p>
+
+	</div>
+	<%= javascript_include_merged :base %>
+</body>
+</html>

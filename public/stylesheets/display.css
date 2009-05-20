@@ -1,0 +1,156 @@
+/*global*/
+a { color: #2C629E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+a.rounded, .button {
+  outline: none;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  white-space: nowrap;
+  vertical-align: middle; /* or top */
+  display: -moz-inline-box;
+  display: inline-block;
+  overflow: visible; /* IE6 form button fix */
+}
+.button {
+  color: #fff;
+  background-color: #3B5998;
+  padding: 5px 10px;
+}
+.button:hover {
+  background-color: #3B79A8;
+}
+a img { border: none; }
+.t_input,select {
+  border:1px solid #DDDDDD;
+  line-height:16px;
+  padding:3px 2px;
+}
+/*global end*/
+
+/*head*/
+#hd{
+  background-color:  #3B5998;
+  height:40px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+#hd .logo{
+  float: left;
+  margin-right: 30px;
+}
+
+#hd a{
+  color: #fff;
+}
+
+#hd .menu{
+  float: left;
+}
+#hd .menu li{
+  float:left;
+  line-height:20px;
+  padding:10px;
+  vertical-align:top;
+}
+
+#hd .nav_account{
+  color: #fff;
+  float: right;
+  width: 185px;
+}
+.login_thumb {
+  background:transparent url(../images/v2/thumb20bg.gif) no-repeat scroll 0 0;
+  display:block;
+  float:left;
+  height:24px;
+  margin:6px 6px 0 0;
+  padding:3px 0 0 3px;
+  width:24px;
+}
+/*head end*/
+
+/*side bar*/
+#app_sidebar{
+  background-color: #F7F7F7;
+  border: 1px solid #ddd;
+  font-size: 110%;
+}
+.app_list{
+  padding: 15px 0; 
+}
+.app_list li {
+  height:20px;
+  line-height:21px;
+  overflow:hidden;
+  position:relative;
+  padding:5px 10px;
+}
+.app_list li img {
+  margin:0 5px 0 0;
+  vertical-align:middle;
+}
+.app_list em {
+  font-size:12px;
+  font-style:normal;
+  font-weight:normal;
+  position:absolute;
+  right:20px;
+}
+.app_list em a {
+  color:#999999;
+}
+/*side bar end*/
+
+/*footer*/
+#ft {
+  background-color: #EDF2F6;
+  margin-top: 30px;
+  color:#333333;
+  padding:10px 0;
+  text-align:center;
+}
+#ft a{
+  color:#333;
+}
+#ft p{
+  margin: 3px 0;
+}
+.r_option {
+  float:right;
+  font-weight:normal;
+}
+/*footer end*/
+
+/*login form*/
+.c_form {
+  padding:0.5em 3em;
+}
+.formtable{
+  width: 100%;
+}
+
+.formtable caption {
+  color:#666666;
+  padding:10px 0;
+  font-weight:bold;
+}
+.formtable caption h2 {
+  border-bottom:1px solid #CCCCCC;
+  color:#333333;
+  font-size:14px;
+  padding-bottom:8px;
+}
+.formtable caption p {
+  margin-top:8px;
+  font-weight:normal;
+}
+.formtable th {
+  padding-right:1em;
+  text-align:right;
+}
+.formtable td, .formtable th {
+  padding:5px;
+}
+/*end*/
