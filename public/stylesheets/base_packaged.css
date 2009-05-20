@@ -39,7 +39,7 @@ form.inline{ display: inline}
   #app_sidebar{ background-color: #F7F7F7; border: 1px solid #ddd; font-size: 110%}
 .app_list{ padding: 15px 0}
 .app_list li {height:20px; line-height:21px; overflow:hidden; position:relative; padding:5px 10px 5px 30px}
-.app_list li.title{ padding:5px 10px 5px 10px; background-color: #d8e8ff}
+.app_list li.title{ padding:5px 10px 5px 10px; background-color: #333; color: #fff}
 .app_list li img {margin:0 5px 0 0; vertical-align:middle}
 .app_list em {font-size:12px; font-style:normal; font-weight:normal; position:absolute; right:20px}
 .app_list em a {color:#999999}
@@ -76,7 +76,7 @@ div.toolbar div.small{ text-align: right}
 .flash_warning{ background-color: #f7941d; color: #fff}
 .flash_error{ background-color: #f00; color: #fff}
   #keys_list li, #buckets_list li{ margin: 0 0 10px 10px}
-#buckets_list{ background-color: #EDF2F6; padding: 10px}
+#buckets_list, #objects_list{ background-color: #EDF2F6; padding: 10px}
 #buckets_list li{ padding: 10px; background-color: #333; color: #fff}
 #buckets_list li a{ color: #fff}
 #buckets_list li a.tool{ color: #333}
