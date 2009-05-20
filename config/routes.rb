@@ -54,6 +54,13 @@ ActionController::Routing::Routes.draw do |map|
     accounts.delete_key   "/aws/keys/:id/delete",   :action => 'delete'
   end
   
+  map.with_options(:controller => 'aws/buckets') do |accounts|
+    accounts.create_bucket   "/aws/buckets/create",   :action => 'create'
+    accounts.delete_bucket   "/aws/buckets/:id/delete",   :action => 'delete'
+  end
+  
+  
+  
 
   
   map.connect ':controller/:action/:id'

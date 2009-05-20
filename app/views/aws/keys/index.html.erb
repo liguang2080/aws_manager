@@ -10,10 +10,10 @@
 	</div>
 
 	<div id="add_key" style="display:none">
-		<form action="/key" method="POST">
-			Name <input name="key_name" type="text"/>
-			<input type="submit" value="create"/> <%= link_to 'Cancel', '#', :onclick => "$('#add_key').toggle()" %>
-		</form>
+			<% form_tag create_key_path do %>
+			名称: <input name="key_name" type="text"/>
+			<input type="submit" value="创建"/>
+			<% end %>
 	</div>
 
 

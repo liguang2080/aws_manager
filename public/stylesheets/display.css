@@ -91,7 +91,11 @@ form.inline{
   line-height:21px;
   overflow:hidden;
   position:relative;
-  padding:5px 10px;
+  padding:5px 10px 5px 30px;
+}
+.app_list li.title{
+  padding:5px 10px 5px 10px;
+  background-color: #d8e8ff;
 }
 .app_list li img {
   margin:0 5px 0 0;
@@ -257,5 +261,22 @@ div.toolbar div.small{
 /*flash end*/
 
 /*keys list*/
-#keys_list
+#keys_list li, #buckets_list li{
+  margin: 0 0 10px 10px;
+}
+#buckets_list{
+  background-color: #EDF2F6;
+  padding: 10px;
+}
+#buckets_list li{
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+#buckets_list li a{
+  color: #fff;
+}
+#buckets_list li a.tool{
+  color: #333;
+}
 /*end*/

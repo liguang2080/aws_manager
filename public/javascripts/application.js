@@ -9,8 +9,8 @@ $().ready(function(){
   $(".rounded").each(function  () {
     $(this).corners();
   });
-  $('.app_list li').hover(function  () {
-    $(this).css({"background-color": "#FAFAFA"});
+  $('.app_list li:not(.title)').hover(function  () {
+    $(this).css({"background-color": "#FEFEFE"});
   },  function  () {
     $(this).css({"background-color": "#F7F7F7"});
   });

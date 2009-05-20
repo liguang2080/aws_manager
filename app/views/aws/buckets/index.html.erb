@@ -1,0 +1,32 @@
+<% @title = 'S3-桶管理' %>
+
+
+<div id="buckets">
+
+	<div class="yui-ge rounded toolbar">
+		<div class="yui-u first">
+			<%= link_to "新建桶",'#add_buckets', :class => "rounded {transparent} button", :rel => "facebox" %>
+		</div>
+		<div class="yui-u small"><%= link_to '返回', '/aws/instances' %></div>
+	</div>
+
+	<div id="add_buckets" style="display:none">
+			<% form_tag create_bucket_path do %>
+			名称: <input name="bucket_name" type="text"/>
+			<input type="submit" value="创建桶"/>
+			<% end %>
+	</div>
+
+
+
+	<ul id="buckets_list" class="rounded">
+		<% @buckets.each do |bucket| %>
+		<li class="rounded">
+		<b> <%= link_to bucket.name, "/bucket/#{bucket}/keys" %></b>  <small>(创建时间:<%= bucket.creation_date %>)</small>
+		<%= link_to "删除",delete_bucket_path(bucket.name), :class => "rounded {transparent} button small tool", :onclick => "return confirm('警告!!!    如果桶里面有文件,所有文件将会被一起删除,确认?')" %>
+		</li>
+		<% end %>
+	</ul>
+
+</div>
+

@@ -10,8 +10,8 @@ class Aws::KeysController < ApplicationController
   end
   
   def create
-    AmazonServices[:ec2].create_key_pair(params[:id])
-    redirect_to :action => "index"
+    output = AmazonServices[:ec2].create_key_pair(params[:key_name])
+    render :text => "<pre>" + output[:aws_material] + "</pre>"
   end
   
 end
