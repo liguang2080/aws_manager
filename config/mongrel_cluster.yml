@@ -7,4 +7,4 @@ environment: production
 group: rails
 address: 127.0.0.1
 pid_file: tmp/pids/mongrel.pid
-servers: 2
+servers: 3

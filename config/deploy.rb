@@ -31,7 +31,7 @@ namespace :vlad do
 
   remote_task :restart_mongrel_cluster do 
     notice "---restart_mongrel_cluster---"
-    run "sudo /etc/init.d/mongrel_ctl start"
+    run "sudo /etc/init.d/mongrel_ctl restart"
   end  
 
   remote_task :refresh_crontab do
