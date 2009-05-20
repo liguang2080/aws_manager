@@ -26,12 +26,12 @@ namespace :vlad do
 
   remote_task :restart_nginx do 
     notice "---restart nginx---"
-    run "sudo /etc/init.d/nginx restart"
+    run "sudo /etc/init.d/nginx_ctl reconfigure"
   end
 
   remote_task :restart_mongrel_cluster do 
     notice "---restart_mongrel_cluster---"
-    run "sudo /etc/init.d/mongrel_ctl restart"
+    run "sudo /etc/init.d/mongrel_ctl start"
   end  
 
   remote_task :refresh_crontab do
